@@ -20,6 +20,6 @@ entries:
     name: avant-test
     type: application
     urls:
-    - https://Soren-365.github.com/helm-charts/avant-test-0.1.0.tgz
+    - https://soren-365.github.io/helm-charts/avant-test-0.1.0.tgz
     version: 0.1.0
 generated: "2019-11-29T12:14:58.427980511+02:00"
