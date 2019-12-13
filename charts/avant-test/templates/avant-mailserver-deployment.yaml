@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml --controller deployment
+    kompose.version: 1.19.0 (f63a961c)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: avant-mailserver
+  name: avant-mailserver
+  namespace: avant-test
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yml --controller deployment
+        kompose.version: 1.19.0 (f63a961c)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: avant-mailserver
+    spec:
+      containers:
+      - image: avant-mail:1.0
+        name: avant-mailserver
+        ports:
+        - containerPort: 2995
+        resources: {}
+      restartPolicy: Always
+status: {}
