@@ -27,7 +27,7 @@ spec:
           value: avant-mailserver
         - name: MAILSERVER_PORT
           value: "2995"
-        image: avant-web:1.0
+        image: soren365/avant-web:1.0
         name: avant-website
         ports:
         - containerPort: 3000
