@@ -22,7 +22,7 @@ spec:
         io.kompose.service: avant-mailserver
     spec:
       containers:
-      - image: avant-mail:1.0
+      - image: soren365/avant-mail:1.0
         name: avant-mailserver
         ports:
         - containerPort: 2995
