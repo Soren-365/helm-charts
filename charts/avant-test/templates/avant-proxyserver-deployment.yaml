@@ -22,7 +22,7 @@ spec:
         io.kompose.service: avant-proxyserver
     spec:
       containers:
-      - image: avant-proxy:1.0
+      - image: soren365/avant-proxy:1.0
         name: avant-proxyserver
         ports:
         - containerPort: 80
