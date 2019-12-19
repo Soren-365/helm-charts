@@ -1,25 +1,25 @@
 apiVersion: v1
 entries:
+  avant:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2019-12-19T15:45:43.938348324+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f57ead683db148aaa1259382b6d0f107bf75d5840222041c9fadbe7f522f830e
+    name: avant
+    type: application
+    urls:
+    - avant-0.1.0.tgz
+    version: 0.1.0
   todo:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-29T12:14:58.428668516+02:00"
+    created: "2019-12-19T15:45:43.939324613+02:00"
     description: A Helm chart for the Todo App solution
     digest: c3527501b2346eb27478949afeed1fecdbd754d2f5a6874cea8888eb569a601b
     name: todo
     type: application
     urls:
-    - https://soren-365.github.io/helm-charts/todo-0.1.0.tgz
+    - todo-0.1.0.tgz
     version: 0.1.0
-  avant-test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2019-12-13T17:43:44.65693869+02:00"
-    description: A Helm chart for Kubernetes
-    digest: f974919110c83f21d8277d90bed194bcd880105c0ea22cc5111b1b3deacf9871
-    name: avant-test
-    type: application
-    urls:
-    - https://Soren-365.github.io/helm-charts/avant-test-0.1.0.tgz
-    version: 0.1.0
-generated: "2019-12-13T17:43:44.656411181+02:00"
+generated: "2019-12-19T15:45:43.937580269+02:00"
