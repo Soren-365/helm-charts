@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml --controller deployment
+    kompose.version: 1.19.0 (f63a961c)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: avant-mailserver
+  name: avant-mailserver
+  namespace: avant-test
+spec:
+  ports:
+  - name: "2995"
+    port: 2995
+    targetPort: 2995
+  selector:
+    io.kompose.service: avant-mailserver
+status:
+  loadBalancer: {}

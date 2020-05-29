@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml --controller deployment
+    kompose.version: 1.19.0 (f63a961c)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: avant-proxyserver
+  name: avant-proxyserver
+  namespace: avant-test
+spec:
+  replicas: 1
+<<<<<<< HEAD
+  selector: 
+    matchLabels:
+      io.kompose.service: avant-proxyserver
+=======
+>>>>>>> b1416a6ad4dd9b5d56b92b7e73d60e1cbde2da9a
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yml --controller deployment
+        kompose.version: 1.19.0 (f63a961c)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: avant-proxyserver
+    spec:
+      containers:
+      - image: soren365/avant-proxy:1.0
+        name: avant-proxyserver
+        ports:
+        - containerPort: 80
+        resources: {}
+      restartPolicy: Always
+status: {}

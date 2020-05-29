@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  avant-test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2019-12-13T17:51:16.572732056+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f974919110c83f21d8277d90bed194bcd880105c0ea22cc5111b1b3deacf9871
+    name: avant-test
+    type: application
+    urls:
+    - https://Soren-365.github.com/helm-charts/avant-test-0.1.0.tgz
+    version: 0.1.0
+generated: "2019-12-13T17:51:16.572196892+02:00"
