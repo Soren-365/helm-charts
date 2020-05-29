@@ -8,7 +8,7 @@ metadata:
   labels:
     io.kompose.service: avant-proxyserver
   name: avant-proxyserver
-  namespace: avant-test
+  namespace: avantweb
 spec:
   replicas: 1
 <<<<<<< HEAD
