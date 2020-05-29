@@ -8,7 +8,7 @@ metadata:
   labels:
     io.kompose.service: avant-mailserver
   name: avant-mailserver
-  namespace: avant-test
+  namespace: avantweb
 spec:
   replicas: 1
 <<<<<<< HEAD
@@ -28,10 +28,10 @@ spec:
         io.kompose.service: avant-mailserver
     spec:
       containers:
-      - image: soren365/avant-mail:1.0
+      - image: soren365/avant-mail:1.02
         name: avant-mailserver
         ports:
-        - containerPort: 2995
+        - containerPort: 3000
         resources: {}
       restartPolicy: Always
 status: {}
