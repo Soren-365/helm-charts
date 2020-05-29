@@ -6,16 +6,15 @@ metadata:
     kompose.version: 1.19.0 (f63a961c)
   creationTimestamp: null
   labels:
-    io.kompose.service: avant-proxyserver
-  name: avant-proxyserver
-  namespace: avant-test
+    io.kompose.service: avant-website
+  name: avant-website
+  namespace: avantweb
 spec:
   ports:
-  - name: "8080"
-    port: 8080
-    targetPort: 80
+  - name: "3000"
+    port: 3000
+    targetPort: 3000
   selector:
-    io.kompose.service: avant-proxyserver
-  type: LoadBalancer
+    io.kompose.service: avant-website
 status:
   loadBalancer: {}

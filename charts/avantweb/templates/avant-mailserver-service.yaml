@@ -8,7 +8,7 @@ metadata:
   labels:
     io.kompose.service: avant-mailserver
   name: avant-mailserver
-  namespace: avant-test
+  namespace: avantweb
 spec:
   ports:
   - name: "2995"
