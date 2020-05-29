@@ -5,4 +5,4 @@ metadata:
       name: avant-configmap
 data:
   MAILSERVER_HOST: "avant-mailserver"
-  MAILSERVER_PORT: "2995" 
+  MAILSERVER_PORT: "3000" 
