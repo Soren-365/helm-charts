@@ -8,7 +8,7 @@ metadata:
   labels:
     io.kompose.service: avant-website
   name: avant-website
-  namespace: avant-test
+  namespace: avant
 spec:
   replicas: 1
 <<<<<<< HEAD
@@ -33,7 +33,7 @@ spec:
           value: avant-mailserver
         - name: MAILSERVER_PORT
           value: "2995"
-        image: soren365/avant-web:1.0
+        image: soren365/avant-website:1.001
         name: avant-website
         ports:
         - containerPort: 3000
