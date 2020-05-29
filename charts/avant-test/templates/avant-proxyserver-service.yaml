@@ -8,12 +8,13 @@ metadata:
   labels:
     io.kompose.service: avant-proxyserver
   name: avant-proxyserver
-  namespace: avant
+  namespace: avantweb
 spec:
   ports:
   - name: "8080"
     port: 8080
     targetPort: 80
+    nodePort: 31002
   selector:
     io.kompose.service: avant-proxyserver
   type: LoadBalancer
