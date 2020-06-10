@@ -13,7 +13,7 @@ spec:
   - name: "8080"
     port: 8080
     targetPort: 80
-    nodePort: 31007
+    nodePort: 31009
   selector:
     io.kompose.service: avant-proxyserver
   type: LoadBalancer
