@@ -16,5 +16,6 @@ spec:
     nodePort: 31002
   selector:
     io.kompose.service: avant-proxyserver
+  type: LoadBalancer
 status:
   loadBalancer: {}
