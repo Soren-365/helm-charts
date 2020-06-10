@@ -31,7 +31,7 @@ spec:
           value: avant-mailserver
         - name: MAILSERVER_PORT
           value: "3000"
-        image: soren365/avant-website:1.014
+        image: soren365/avant-website:1.013
         imagePullPolicy: ""
         name: avant-website
         ports:
