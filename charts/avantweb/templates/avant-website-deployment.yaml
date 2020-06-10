@@ -13,8 +13,7 @@ spec:
   selector:
     matchLabels:
       io.kompose.service: avant-website
-  strategy:
-    type: Recreate
+  strategy: {}
   template:
     metadata:
       annotations:
@@ -32,19 +31,13 @@ spec:
           value: avant-mailserver
         - name: MAILSERVER_PORT
           value: "3000"
-        image: soren365/avant-website:1.013
+        image: soren365/avant-website:1.014
         imagePullPolicy: ""
         name: avant-website
         ports:
         - containerPort: 8080
         resources: {}
-        volumeMounts:
-        - mountPath: /code
-          name: avant-website-claim0
       restartPolicy: Always
       serviceAccountName: ""
-      volumes:
-      - name: avant-website-claim0
-        persistentVolumeClaim:
-          claimName: avant-website-claim0
+      volumes: null
 status: {}
