@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -o helmcharts/avantweb/templates
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: avant-website
+  name: avant-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: avant-website
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -o helmcharts/avantweb/templates
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: avant-website
+    spec:
+      containers:
+      - env:
+        - name: KUBE_NAMESPACE
+        - name: MAILSERVER_HOST
+          value: avant-mailserver
+        - name: MAILSERVER_PORT
+          value: "3000"
+        image: soren365/avant-website:1.015
+        imagePullPolicy: ""
+        name: avant-website
+        ports:
+        - containerPort: 8080
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}
