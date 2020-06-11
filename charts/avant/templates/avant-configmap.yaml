@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-      namespace: avantweb
-      name: avant-configmap
-data:
-  MAILSERVER_HOST: "avant-mailserver"
-  MAILSERVER_PORT: "2995" 
