@@ -3,7 +3,7 @@ entries:
   avant:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-11T10:28:10.85623423+03:00"
+    created: "2020-06-11T10:29:06.181259305+03:00"
     description: A Helm chart for Kubernetes
     digest: f85bb2dd4f835d4c1bb7fb4cc1f7412ab7f9f578642fda396bdbb42aa2df443c
     name: avant
@@ -14,7 +14,7 @@ entries:
   avantweb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-11T10:28:10.857616028+03:00"
+    created: "2020-06-11T10:29:06.181876935+03:00"
     description: A Helm chart for Kubernetes
     digest: 36843378192c16da90f4772bde2c5d0b5ccce97dda64a05ef8c640558e0ff2d0
     name: avantweb
@@ -25,7 +25,7 @@ entries:
   kubeHooks:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-06-11T10:28:10.858632894+03:00"
+    created: "2020-06-11T10:29:06.18240752+03:00"
     description: A Helm chart for Kubernetes
     digest: 7be497f8ab68525bac71c271c9462de1dfc46e12d3220945c2adab55889da381
     name: kubeHooks
@@ -36,7 +36,7 @@ entries:
   todo:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-06-11T10:28:10.859867773+03:00"
+    created: "2020-06-11T10:29:06.184706044+03:00"
     description: A Helm chart for the Todo App solution
     digest: c3527501b2346eb27478949afeed1fecdbd754d2f5a6874cea8888eb569a601b
     name: todo
@@ -44,4 +44,4 @@ entries:
     urls:
     - todo-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-11T10:28:10.854664808+03:00"
+generated: "2020-06-11T10:29:06.180473145+03:00"
