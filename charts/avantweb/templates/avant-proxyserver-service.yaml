@@ -3,8 +3,6 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert -o helmcharts/avantweb/templates
-    kompose.service.ports.nodePort: "31002"
-    kompose.service.type: LoadBalancer
     kompose.version: 1.21.0 (992df58d8)
   creationTimestamp: null
   labels:
