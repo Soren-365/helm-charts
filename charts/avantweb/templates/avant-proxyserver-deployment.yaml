@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   annotations:
     kompose.cmd: kompose convert -o helmcharts/avantweb/templates
-    kompose.service.ports.nodePort: "31002"
     kompose.service.type: LoadBalancer
     kompose.version: 1.21.0 (992df58d8)
   creationTimestamp: null
@@ -20,7 +19,6 @@ spec:
     metadata:
       annotations:
         kompose.cmd: kompose convert -o helmcharts/avantweb/templates
-        kompose.service.ports.nodePort: "31002"
         kompose.service.type: LoadBalancer
         kompose.version: 1.21.0 (992df58d8)
       creationTimestamp: null
@@ -28,7 +26,7 @@ spec:
         io.kompose.service: avant-proxyserver
     spec:
       containers:
-      - image: soren365/avant-mail:1.02
+      - image: soren365/avant-proxy:1.0
         imagePullPolicy: ""
         name: avant-proxyserver
         ports:
