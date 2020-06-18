@@ -29,7 +29,7 @@ spec:
           value: avant-mailserver
         - name: MAILSERVER_PORT
           value: "3000"
-        image: {{ .Values.image.value }}
+        image: {{ .Values.webapp-image }}
         image: soren365/avant-website:1.028
         imagePullPolicy: ""
         name: avant-website
