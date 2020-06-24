@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: avantweb-configmap
 data:
- webapp-image: ""
+ appimage: ""
